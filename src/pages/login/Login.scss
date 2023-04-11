@@ -1,0 +1,97 @@
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../assets/mainBg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-family: cursive;
+
+  .main-title-div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(197, 142, 22);
+    border-radius: 8px;
+  }
+
+  .main-title{
+    color: rgb(197, 142, 22); 
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .loginBox {
+    width: 100%;
+    padding: 30px;
+    color: white;
+
+    @media (min-width: 768px) {
+      max-width: 400px;
+      padding: 40px;
+
+    }
+  }
+
+  .heading {
+    justify-content: center;
+    display: flex;
+    color: white;
+  }
+
+  label,
+  input {
+    display: block;
+    width: 100%;
+    margin-block: 8px;
+    border-radius: 8px;
+  }
+
+  input {
+    padding: 10px 20px;
+    border: 1px solid rgb(194, 188, 188);
+  }
+
+  .submit {
+    background-color: rgb(110, 110, 175);
+    border: none;
+    font-weight: bolder;
+    color: white;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+
+  .submit:hover {
+    background-color: rgb(75, 75, 204);
+  }
+
+  .subHeading {
+    margin-top: 16px;
+    color: aliceblue;
+  }
+
+
+  .demo-btn {
+    padding: 8px 16px;
+    background-color: rgb(170, 170, 184);
+    border: none;
+    font-weight: bolder;
+    color: rgb(78, 38, 38);
+    display: block;
+    width: 100%;
+    margin-block: 8px;
+    border-radius: 8px;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+
+  .demo-btn:hover {
+    background-color: rgb(75, 75, 204);
+    color: aliceblue;
+  }
+}

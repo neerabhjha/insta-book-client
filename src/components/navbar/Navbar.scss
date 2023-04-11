@@ -1,0 +1,57 @@
+.Navbar {
+    margin: 10px;
+    margin-top: 10px;
+    height: 60px;
+    color: chocolate;
+    background-image: linear-gradient(to right, gray, white);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+    @media only screen and (max-width: 768px) {
+        padding: 20px;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        color: chocolate;
+        align-items: center;
+        justify-content: space-between;
+        font-family: cursive;
+
+        .banner {
+            
+            display: flex;
+            gap: 20px;            
+            color: rgb(170, 98, 4);
+            border-radius: 10px;
+            padding: 8px 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            background-image: linear-gradient(to right, rgb(192, 188, 188), rgb(247, 242, 242));
+
+            .logo{
+                font-size: 2rem;
+                font: bolder;
+            }
+        }
+
+        .right-side {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .logout {
+                font-size: 1.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

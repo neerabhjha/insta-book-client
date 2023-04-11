@@ -1,0 +1,52 @@
+.Feed {
+
+  .container {
+    display: flex;
+    gap: 20px;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+
+    .left-part {
+      flex: 2;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        display: block;
+        padding: 10px;
+
+      }
+    }
+
+    .right-part {
+
+      flex: 1;
+      margin-top: 20px;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+        padding: 20px;
+
+      }
+
+      .title {
+        margin-bottom: 12px;
+        font: bolder;
+        color: chocolate;
+      }
+
+      .following {
+        @media only screen and (max-width: 768px) {
+          margin-top: 0;
+        }
+      }
+
+      .suggestions {
+        margin-top: 40px;
+      }
+    }
+  }
+
+
+}

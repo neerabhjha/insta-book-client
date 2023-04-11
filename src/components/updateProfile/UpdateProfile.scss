@@ -1,0 +1,90 @@
+.UpdateProfile {
+  margin-top: 20px;
+
+  .container {
+    display: flex;
+    padding-top: 20px;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+
+    .left-part {
+      flex: 1;
+      text-align: center;
+
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+
+      .input-user-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .labelImg {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border: 2px solid rgb(158, 73, 73);
+          cursor: pointer;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        .inputImg {
+          display: none;
+        }
+      }
+    }
+
+    .right-part {
+      flex: 3;
+
+      @media only screen and (max-width: 768px) {
+        margin: 10px;
+        align-items: center;
+      }
+
+      form {
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        border-radius: 4px;
+        background-color: rgb(236, 219, 214);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      .update-input {
+        padding: 20px;
+        border: none;
+        background-color: rgb(152, 196, 197);
+        border-radius: 8px;
+        font-size: 1.4rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .btn-primary {
+        width: fit-content;
+      }
+
+      .delete-account {
+        margin-top: 16px;
+        background-color: red;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+    }
+  }
+}
