@@ -31,7 +31,7 @@ function Login() {
       setItem(KEY_ACCESS_TOKEN, response.result.accessToken);
       navigate("/");
 
-      // console.log(response);
+     
     } catch (error) {
       console.log("error", error);
     }
@@ -53,7 +53,7 @@ function Login() {
       setItem(KEY_ACCESS_TOKEN, response.result.accessToken);
       navigate("/");
 
-      // console.log(response);
+      
     } catch (error) {
       console.log("error", error);
     }

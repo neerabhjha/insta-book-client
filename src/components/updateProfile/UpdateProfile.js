@@ -55,7 +55,7 @@ function UpdateProfile() {
       );
       removeItem(KEY_ACCESS_TOKEN);
       window.location.replace("/login");
-      return 
+      return;
     } catch (error) {
       dispatch(
         showToast({

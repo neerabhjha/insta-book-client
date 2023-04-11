@@ -12,11 +12,7 @@ function Follower({ user }) {
   const navigate = useNavigate()
 
   useEffect(() => {
-    // if(feedData.followings.find(item => item._id === user._id)){
-    //   setIsFollowing(true)
-    // } else{
-    //   setIsFollowing(false)
-    // }
+
     setIsFollowing(feedData?.followings?.find((item) => item._id === user._id));
   }, [feedData]);
   

@@ -11,7 +11,6 @@ function CreatePost() {
   const [caption, setCaption] = useState("");
   const dispatch = useDispatch();
   const myProfile = useSelector((state) => state.appConfigReducer.myProfile);
-  // console.log("myProfile::", myProfile);
 
   const handleImgChange = (e) => {
     const file = e.target.files[0];
@@ -31,7 +30,6 @@ function CreatePost() {
         caption,
         postImg,
       });
-      // console.log("post done", response);
 
       dispatch(
         getUserProfile({
@@ -39,7 +37,6 @@ function CreatePost() {
         })
       );
     } catch (error) {
-      // console.log("whts the error", error);
     } finally {
       
       setCaption("");

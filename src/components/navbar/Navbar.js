@@ -34,7 +34,6 @@ function Navbar() {
             onClick={() => navigate(`/profile/${myProfile?._id}`)}
           >
             <Avatar src={myProfile?.avatar?.url} />
-            {/* {myProfile?.avatar?.url && <img src={myProfile?.avatar.url} alt="" />} */}
           </div>
           <div className="logout hover-link" onClick={handleLogoutClicked}>
             <AiOutlineLogout />

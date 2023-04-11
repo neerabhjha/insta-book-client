@@ -27,7 +27,7 @@ axiosClient.interceptors.request.use((request) => {
 axiosClient.interceptors.response.use(
   async (response) => {
     store.dispatch(setLoading(false));
-    // console.log(response);
+    
     const data = response.data;
     if (data.status === "ok") {
       return data;
@@ -36,7 +36,6 @@ axiosClient.interceptors.response.use(
     const originalRequest = response.config;
     const statusCode = data.statusCode;
     const error = data.message;
-    // console.log('error' , error);
 
     store.dispatch(
       showToast({

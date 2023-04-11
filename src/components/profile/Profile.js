@@ -6,7 +6,7 @@ import CreatePost from "../createPost/CreatePost";
 import { useDispatch, useSelector } from "react-redux";
 import { getUserProfile } from "../../redux/slices/postsSlice";
 import { followAndUnfollowUser } from "../../redux/slices/feedSlice";
-import userPng from "../../assets/user.png"
+import userPng from "../../assets/user.png";
 
 function Profile() {
   const navigate = useNavigate();
@@ -39,8 +39,6 @@ function Profile() {
     );
   }
 
-  
-
   return (
     <div className="Profile">
       <div className="container">
@@ -52,7 +50,11 @@ function Profile() {
         </div>
         <div className="right-part">
           <div className="profile-card">
-            <img className="user-img" src={userProfile?.avatar?.url || userPng} alt={userProfile?.name} />
+            <img
+              className="user-img"
+              src={userProfile?.avatar?.url || userPng}
+              alt={userProfile?.name}
+            />
             <h2 className="user-name">{userProfile?.name}</h2>
             <p>{userProfile?.bio}</p>
             <div className="follower-info">
@@ -69,19 +71,30 @@ function Profile() {
                 Update Profile
               </button>
             )}
-            
-              {/* {isFollowing  ? "Unfollow" :  "Follow"} */}
-              {(() => {
-                if(isFollowing && !isMyProfile){
-                  return (<button onClick={handleUserFollow}
-                    className= "btn-secondary follow">Unfollow</button>)
-                }
-                if(!isFollowing && !isMyProfile){
-                  return  (<button onClick={handleUserFollow}
-                    className= "btn-primary follow">Follow</button>)
-                }
-              })()}
 
+            {/* {isFollowing  ? "Unfollow" :  "Follow"} */}
+            {(() => {
+              if (isFollowing && !isMyProfile) {
+                return (
+                  <button
+                    onClick={handleUserFollow}
+                    className="btn-secondary follow"
+                  >
+                    Unfollow
+                  </button>
+                );
+              }
+              if (!isFollowing && !isMyProfile) {
+                return (
+                  <button
+                    onClick={handleUserFollow}
+                    className="btn-primary follow"
+                  >
+                    Follow
+                  </button>
+                );
+              }
+            })()}
           </div>
         </div>
       </div>

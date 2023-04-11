@@ -31,7 +31,7 @@ function Signup() {
         })
       );
       navigate('/login')
-      console.log(result);
+      
     } catch (e) {
       console.log(e);
     }
