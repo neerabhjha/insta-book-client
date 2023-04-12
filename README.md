@@ -27,7 +27,7 @@ https://insta-book-app.onrender.com/#/login
 
 ## Tech Stack
 
-**Client:** React, Redux, CSS
+**Client:** React, Redux,SCSS,CSS
 
 **Server:** Node, Express
 
