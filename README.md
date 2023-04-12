@@ -27,12 +27,14 @@ https://insta-book-app.onrender.com/#/login
 
 ## Tech Stack
 
-**Client:** React, Redux,SCSS,CSS
+**Client:** React, Redux, CSS
 
 **Server:** Node, Express
 
 
 ## Demo
+
+Insert gif or link to demo
 
 **A Demo User added at login page**
 ## Upcoming Features
