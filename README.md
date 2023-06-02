@@ -1,5 +1,5 @@
 
-# Project Title
+# INSTABOOK
 
 A social media application project built on the MERN stack. The project is in perfect functioning order. The application is entirely responsive.
 Project is deployed on render.
